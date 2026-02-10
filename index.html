@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarrantyVault — Privacy Policy</title>
+    <style>
+        :root {
+            --gold: #C9A84C;
+            --bg: #0A0A0A;
+            --card: #141414;
+            --text: #E8E8E8;
+            --muted: #888;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .logo {
+            color: var(--gold);
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .effective {
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: var(--gold);
+        }
+
+        p, li {
+            font-size: 15px;
+            color: #CCC;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            background: var(--card);
+            border-left: 3px solid var(--gold);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid #222;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .footer a {
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">WARRANTYVAULT</div>
+        <div class="subtitle">Il tuo vault personale per le garanzie</div>
+
+        <h1>Privacy Policy</h1>
+        <div class="effective">Data di efficacia: 10 febbraio 2026</div>
+
+        <div class="highlight">
+            <p><strong>In breve:</strong> WarrantyVault opera secondo il principio "Privacy by Design" e "Local First". Tutti i tuoi dati rimangono esclusivamente sul tuo dispositivo, cifrati con AES-256. Non raccogliamo, trasmettiamo o conserviamo alcun dato su server remoti.</p>
+        </div>
+
+        <h2>1. Titolare del Trattamento</h2>
+        <p>WarrantyVault è un'applicazione sviluppata da Benedetto Riba per la gestione personale delle garanzie dei prodotti acquistati.</p>
+        <div class="highlight">
+            <p>Non esiste un titolare del trattamento esterno poiché non raccogliamo, trasmettiamo o conserviamo alcun dato su server remoti.</p>
+        </div>
+
+        <h2>2. Dati Trattati</h2>
+        <p>WarrantyVault tratta esclusivamente i seguenti dati, tutti conservati <strong>localmente sul tuo dispositivo</strong> e cifrati:</p>
+        <ul>
+            <li><strong>Dati delle garanzie:</strong> nome prodotto, negozio, data di acquisto, durata garanzia, scadenza, categoria, note</li>
+            <li><strong>Prezzo di acquisto:</strong> cifrato in AES-256-CBC (dato sensibile — abitudini di spesa)</li>
+            <li><strong>Foto scontrini:</strong> cifrate su disco con AES-256-CBC, hash SHA-256 di integrità</li>
+            <li><strong>Dati tecnici:</strong> preferenze app, stato autenticazione biometrica, impostazioni notifiche</li>
+        </ul>
+        <p><strong>Dati NON raccolti:</strong></p>
+        <ul>
+            <li>Dati di geolocalizzazione</li>
+            <li>Dati di identificazione personale (nome, email, telefono)</li>
+            <li>Dati di pagamento reali</li>
+            <li>Contatti o rubrica</li>
+            <li>Cronologia di navigazione</li>
+            <li>Analytics, telemetria o tracking di alcun tipo</li>
+        </ul>
+
+        <h2>3. Base Giuridica del Trattamento</h2>
+        <p>Il trattamento dei dati si basa sulle seguenti basi giuridiche (Art. 6 GDPR):</p>
+        <ul>
+            <li><strong>Esecuzione del contratto (Art. 6(1)(b)):</strong> il trattamento dei dati delle garanzie è necessario per fornirti il servizio di gestione che hai richiesto installando l'app.</li>
+            <li><strong>Consenso (Art. 6(1)(a)):</strong> per funzionalità opzionali come notifiche di scadenza, fotocamera per scontrini e autenticazione biometrica, richiediamo il tuo esplicito consenso revocabile in qualsiasi momento.</li>
+        </ul>
+
+        <h2>4. Sicurezza dei Dati</h2>
+        <p>WarrantyVault implementa le seguenti misure di sicurezza:</p>
+        <ul>
+            <li><strong>Cifratura AES-256-CBC:</strong> tutti i campi sensibili del database (nome prodotto, negozio, note, prezzo) sono cifrati singolarmente con IV unico per ogni operazione</li>
+            <li><strong>Cifratura scontrini:</strong> le foto degli scontrini sono cifrate su disco, con hash SHA-256 per verificarne l'integrità</li>
+            <li><strong>Chiavi hardware:</strong> master key protetta da iOS Keychain / Android Keystore (hardware-backed)</li>
+            <li><strong>Autenticazione biometrica:</strong> Face ID / Touch ID / impronta digitale per l'accesso al vault</li>
+            <li><strong>Protezione memoria:</strong> i bytes degli scontrini decifrati vengono azzerati dalla memoria dopo l'uso</li>
+            <li><strong>Nessun backup Android:</strong> <code>android:allowBackup="false"</code> previene l'estrazione dati via ADB</li>
+            <li><strong>Zero cloud:</strong> nessun dato lascia mai il dispositivo</li>
+        </ul>
+
+        <h2>5. Conservazione dei Dati</h2>
+        <p>Tutti i dati sono conservati esclusivamente nella memoria sicura del tuo dispositivo.</p>
+        <p><strong>Durata:</strong> i dati sono conservati fino a quando:</p>
+        <ul>
+            <li>Decidi di eliminarli manualmente dall'app</li>
+            <li>Eserciti il diritto all'oblio (Art. 17) tramite la funzione "Distruggi Vault"</li>
+            <li>Disinstalli l'applicazione</li>
+        </ul>
+
+        <h2>6. I Tuoi Diritti (GDPR)</h2>
+        <p>Ai sensi del Regolamento UE 2016/679 (GDPR), hai i seguenti diritti:</p>
+        <ul>
+            <li><strong>Diritto di Accesso (Art. 15):</strong> puoi visualizzare tutti i tuoi dati direttamente nell'app in qualsiasi momento.</li>
+            <li><strong>Diritto di Rettifica (Art. 16):</strong> puoi modificare i tuoi dati attraverso l'interfaccia dell'app.</li>
+            <li><strong>Diritto alla Cancellazione (Art. 17):</strong> la funzione "Distruggi Vault" nelle impostazioni elimina permanentemente tutti i dati: database, scontrini cifrati, chiavi di cifratura e preferenze.</li>
+            <li><strong>Diritto alla Limitazione (Art. 18):</strong> puoi eliminare singole garanzie o scontrini in qualsiasi momento.</li>
+        </ul>
+        <div class="highlight">
+            <p><strong>Distruggi Vault</strong> esegue una cancellazione completa e irreversibile: elimina il file database SQLite, tutti gli scontrini cifrati dal disco, le chiavi di cifratura dal Keychain/Keystore e tutte le preferenze dell'app.</p>
+        </div>
+
+        <h2>7. Trasferimento Dati</h2>
+        <div class="highlight">
+            <p><strong>Nessun trasferimento:</strong> i tuoi dati non vengono mai trasferiti a terzi, server remoti o paesi al di fuori dell'UE. WarrantyVault è un'app completamente offline.</p>
+        </div>
+
+        <h2>8. Acquisti In-App</h2>
+        <p>Gli acquisti in-app (PRO) sono gestiti esclusivamente da:</p>
+        <ul>
+            <li><strong>Apple App Store</strong> (iOS) — <a href="https://www.apple.com/legal/privacy/">Privacy Policy Apple</a></li>
+            <li><strong>Google Play Store</strong> (Android) — <a href="https://policies.google.com/privacy">Privacy Policy Google</a></li>
+        </ul>
+        <p>La validazione degli acquisti avviene tramite <strong>RevenueCat</strong> in modalità anonima (nessun identificativo utente personale). RevenueCat riceve solo lo stato dell'entitlement, non i dati delle tue garanzie.</p>
+        <p><a href="https://www.revenuecat.com/privacy">Privacy Policy RevenueCat</a></p>
+
+        <h2>9. Elaborazione OCR</h2>
+        <p>La scansione OCR degli scontrini (funzionalità PRO) avviene <strong>interamente sul dispositivo</strong> tramite Google ML Kit on-device. Nessuna immagine o testo estratto viene mai trasmesso esternamente.</p>
+
+        <h2>10. Minori</h2>
+        <p>WarrantyVault non è destinata a minori di 16 anni. Non raccogliamo consapevolmente dati di minori.</p>
+
+        <h2>11. Modifiche alla Privacy Policy</h2>
+        <p>Eventuali modifiche a questa policy saranno pubblicate su questa pagina con data di efficacia aggiornata.</p>
+
+        <h2>12. Contatti</h2>
+        <p>Per esercitare i tuoi diritti o per qualsiasi domanda sulla privacy:</p>
+        <p><a href="mailto:support@benedettoriba.com">support@benedettoriba.com</a></p>
+        <p>Risposta garantita entro 30 giorni.</p>
+        <p>Per reclami: <a href="https://www.garanteprivacy.it">Garante per la Protezione dei Dati Personali</a></p>
+
+        <div class="footer">
+            <p>&copy; 2026 Benedetto Riba. Tutti i diritti riservati.</p>
+            <p style="margin-top: 8px;"><a href="terms.html">Termini di Servizio</a></p>
+        </div>
+    </div>
+</body>
+</html>
